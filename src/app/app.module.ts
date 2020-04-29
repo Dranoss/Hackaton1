@@ -9,6 +9,7 @@ import { HomePageComponent } from './Pages/home-page/home-page.component';
 import { MapsComponent } from './Pages/maps/maps.component';
 import { HttpClientModule} from '@angular/common/http';
 import { ScoreComponent } from './Jeu/score/score.component';
+import { JeuComponent } from './jeu/jeu.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ScoreComponent } from './Jeu/score/score.component';
     HomePageComponent,
     NavbarComponent,
     FooterComponent,
-    ScoreComponent
+    ScoreComponent,
+    JeuComponent
   ],
   imports: [
     BrowserModule,
