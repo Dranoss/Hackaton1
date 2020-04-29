@@ -9,4 +9,8 @@
   </map-marker>
 </google-map>
 {{distance}}
+<div *ngFor="let item of streetViewList">
+  {{item.name}}
+</div>
+<div *ngIf="streetViewSelected">{{streetViewSelected.id}}</div>
 

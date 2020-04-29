@@ -7,6 +7,7 @@ import { NavbarComponent } from './Commun/navbar/navbar.component';
 import { FooterComponent } from './Commun/footer/footer.component';
 import { HomePageComponent } from './Pages/home-page/home-page.component';
 import { MapsComponent } from './Pages/maps/maps.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MapsComponent } from './Pages/maps/maps.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

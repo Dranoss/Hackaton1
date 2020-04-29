@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MapInfoWindow, MapMarker, GoogleMap } from '@angular/google-maps';
-import { DistanceService } from 'src/app/Service/distance.service';
-import { StreetViewService } from 'src/app/Service/street-view.service';
+import { DistanceService } from '../Service/distance.service';
+
 
 @Component({
   selector: 'app-maps',
@@ -9,7 +9,9 @@ import { StreetViewService } from 'src/app/Service/street-view.service';
   styleUrls: ['./maps.component.scss']
 })
 export class MapsComponent implements OnInit {
- streetViewList: [];
+
+  constructor(private calculDistance: DistanceService) { }
+
   markers = [];
   lat: number;
   lng: number;
@@ -18,8 +20,7 @@ export class MapsComponent implements OnInit {
   lng2 = -106.00010762499998;
   destination = {lat: this.lat2, lng: this.lng2};
   distance;
-  streetViewSelected;
-  constructor(private calculDistance: DistanceService, private streetView: StreetViewService) { }
+
   click(event: google.maps.MouseEvent) {
     this.lat = event.latLng.lat();
     this.lng = event.latLng.lng();
@@ -45,20 +46,7 @@ export class MapsComponent implements OnInit {
       options: {},
     }];
   }
-  getRandomnStreetView(){
-      if (this.streetViewList.length === 0) {}
-      const randIndex = Math.floor(Math.random() * Math.floor((this.streetViewList.length)));
-      const chosenStreetView = this.streetViewList.splice(randIndex, 1);
-      return chosenStreetView[0];
-  }
-
 ngOnInit(): void {
-this.streetView.getStreetViews().subscribe((e) => {
-  this.streetViewList = e;
-  this.streetViewSelected = this.getRandomnStreetView();
-
-});
-
   }
 
 }
