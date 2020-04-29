@@ -1,4 +1,6 @@
-<google-map height="800px" width="800px" [zoom]="4" (mapClick)="click($event)">
+<img *ngIf="streetViewSelected" [src]="streetViewSelected.url" alt="Landscape" >
+
+<google-map height="600px" width="800px" [zoom]="4" (mapClick)="click($event)">
   <map-marker
     *ngFor="let marker of markers"
     [position]="marker.position"
@@ -9,8 +11,6 @@
   </map-marker>
 </google-map>
 {{distance}}
-<div *ngFor="let item of streetViewList">
-  {{item.name}}
-</div>
-<div *ngIf="streetViewSelected">{{streetViewSelected.id}}</div>
+<button (click)="confirm()">Confirmer</button>
+
 

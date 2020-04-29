@@ -13,21 +13,20 @@ export class MapsComponent implements OnInit {
   markers = [];
   lat: number;
   lng: number;
-  origin = {lat: this.lat, lng: this.lng};
-  lat2 = 35.8707051119801;
-  lng2 = -106.00010762499998;
-  destination = {lat: this.lat2, lng: this.lng2};
   distance;
   streetViewSelected;
-  constructor(private calculDistance: DistanceService, private streetView: StreetViewService) { }
+  counter: number;
+  constructor(private calculDistance: DistanceService, private streetView: StreetViewService) {
+    this.counter = 0;
+  }
   click(event: google.maps.MouseEvent) {
     this.lat = event.latLng.lat();
     this.lng = event.latLng.lng();
     this.addMarker();
     const rLat1 = this.calculDistance.degreeToRadiant(this.lat);
     const rLon1 = this.calculDistance.degreeToRadiant(this.lng);
-    const rLat2 = this.calculDistance.degreeToRadiant(this.lat2);
-    const rLon2 = this.calculDistance.degreeToRadiant(this.lng2);
+    const rLat2 = this.calculDistance.degreeToRadiant(this.streetViewSelected.lat);
+    const rLon2 = this.calculDistance.degreeToRadiant(this.streetViewSelected.lng);
     this.distance = this.calculDistance.calculDistance(rLon1, rLat1, rLon2, rLat2);
   }
 
@@ -51,10 +50,14 @@ export class MapsComponent implements OnInit {
       const chosenStreetView = this.streetViewList.splice(randIndex, 1);
       return chosenStreetView[0];
   }
+  confirm(){
+ this.streetViewSelected = this.getRandomnStreetView();
+ this.markers = [];
+  }
 
 ngOnInit(): void {
-this.streetView.getStreetViews().subscribe((e) => {
-  this.streetViewList = e;
+this.streetView.getStreetViews().subscribe((element) => {
+  this.streetViewList = element;
   this.streetViewSelected = this.getRandomnStreetView();
 
 });
