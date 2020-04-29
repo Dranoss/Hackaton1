@@ -1,19 +1,58 @@
 [
     {"id": 1,
-      "name": "France - Paris",
-      "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=48.876013,2.288873&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&"
-      ,"gpsCoord": "48.876013,2.288873"},
+      "name": "Seychelles",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Anse_Source_d%27Argent_3-La_Digue.jpg",
+      "lat": -4.3767297,
+      "lng": 55.8259462
+    },
     {"id": 2,
       "name": "Portugal - Ponte de Lima",
-      "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=41.767707,-8.5850801&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&",
-      "gpsCoord": "41.767707,-8.5850801"},
+      "url": "https://i.dailymail.co.uk/i/pix/2016/07/05/14/35F8D8D100000578-3667893-image-a-2_1467725349400.jpg",
+      "lat": 41.767707,
+      "lng": -8.5850801
+    },
     {"id": 3,
-      "name": "Colombie - Cartagena",
-      "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=10.4241844,-75.551079&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&",
-      "gpsCoord":"10.4241844,-75.551079"},
+      "name": "Colombie - Guatape",
+      "url": "https://www.opodo.fr/blog/wp-content/uploads/sites/16/2018/11/blogpost-piedra-de-penol-guatape-colombie-720x480.png",
+      "lat": 6.2311374,
+      "lng": -75.1668908
+    },
     {"id": 4,
       "name": "Bolivie - Salar de Uyuni",
-      "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=-20.2039391,-67.2475538&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&",
-      "gpsCoord": "-20.2039391,-67.2475538"}
-]
+      "url": "https://www.mademoiselle-voyage.fr/wp-content/uploads/2016/01/bolivie-mademoiselle-voyage-salar-uyuni-desert-sel-23.jpg",
+      "lat": -20.2039391,
+      "lng": -67.2475538
+    },
+    {"id": 5,
+      "name": "Japon - Tokyo",
+      "url": "https://live.staticflickr.com/1755/41792814025_4d56894739_b.jpg",
+      "lat": 35.7099906,
+      "lng": 139.8113231
+    },
+    {"id": 6,
+      "name": "Maroc - Place Jamaa el fna",
+      "url": "https://www.voyage.fr/sites/default/files/styles/1170x530/public/2019-08/La-Place-Jemaa-El-Fna%2C-c%C5%93ur-vibrant-et-musical-de-Marrakech-et-sa-m%C3%A9dina.jpg?itok=2o6H29iQ",
+      "lat": 31.627204,
+      "lng": -7.989014
+    },
+    {"id": 7,
+      "name": "Île Lofoten - Moskenesøya",
+      "url":"https://live.staticflickr.com/8293/7847804604_b8cf2707c1_b.jpg",
+      "lat": 67.9653559,
+      "lng": 12.9351078
+    },
+    {"id": 8,
+      "name": "Beverly Hills - Los Angeles, USA",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Rodeo_Drive%2C_Beverly_Hills%2C_LA%2C_CA%2C_jjron_21.03.2012.jpg/1200px-Rodeo_Drive%2C_Beverly_Hills%2C_LA%2C_CA%2C_jjron_21.03.2012.jpg",
+      "lat": 34.070187,
+      "lng": -118.403782
+    },
+    {"id": 9,
+      "name": "Wadi Musa - Petra Jordania",
+      "url": "https://images.pexels.com/photos/1631665/pexels-photo-1631665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "lat": 30.323219,
+      "lng": 35.480323
+    }
+
+  ]
 
