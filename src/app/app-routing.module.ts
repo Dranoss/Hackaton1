@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MapsComponent } from './maps/maps.component';
-
+import { MapsComponent } from './Pages/maps/maps.component';
+import { HomePageComponent } from './Pages/home-page/home-page.component';
 
 const routes: Routes = [
-  {path: '', component: MapsComponent}
+  {path: 'map', component: MapsComponent},
+  {path: '', component: HomePageComponent}
 ];
 
 @NgModule({

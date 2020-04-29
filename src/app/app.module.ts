@@ -1,15 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MapsComponent } from './maps/maps.component';
+import { NavbarComponent } from './Commun/navbar/navbar.component';
+import { FooterComponent } from './Commun/footer/footer.component';
+import { HomePageComponent } from './Pages/home-page/home-page.component';
+import { MapsComponent } from './Pages/maps/maps.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapsComponent
+    MapsComponent,
+    HomePageComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
