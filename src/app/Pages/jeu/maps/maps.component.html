@@ -1,5 +1,5 @@
 <img *ngIf="streetViewSelected" [src]="streetViewSelected.url" alt="Landscape" >
-<div *ngIf="canClick === false">Vous etiez à {{distance}} Km de {{name}} </div>
+<div class="message"*ngIf="canClick === false">Vous etiez à {{distance}} Km de {{name}} </div>
 <google-map height="600px" width="800px" [zoom]="4" (mapClick)="click($event)">
   <map-marker
     *ngFor="let marker of markers"
