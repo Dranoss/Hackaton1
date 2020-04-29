@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './Commun/navbar/navbar.component';
 import { FooterComponent } from './Commun/footer/footer.component';
 import { HomePageComponent } from './Pages/home-page/home-page.component';
-import { HttpClientModule} from '@angular/common/http';
 import { JeuComponent } from './Pages/jeu/jeu.component';
 import { ScoreComponent } from './Pages/jeu/score/score.component';
 import { MapsComponent } from './Pages/jeu/maps/maps.component';
+import { HttpClientModule} from '@angular/common/http';
+import { LastPageComponent } from './Pages/last-page/last-page.component';
+
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { MapsComponent } from './Pages/jeu/maps/maps.component';
     NavbarComponent,
     FooterComponent,
     ScoreComponent,
-    JeuComponent
+    JeuComponent,
+    LastPageComponent
   ],
   imports: [
     BrowserModule,
