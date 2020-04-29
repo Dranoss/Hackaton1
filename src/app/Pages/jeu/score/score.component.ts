@@ -19,7 +19,6 @@ export class ScoreComponent implements OnInit {
   interval;
   scoreTotal = 10000;
 
-
   constructor() { }
 
   ngOnInit(): void {
@@ -54,4 +53,5 @@ export class ScoreComponent implements OnInit {
       console.log(this.totalTime);
   }
 }
+
 
