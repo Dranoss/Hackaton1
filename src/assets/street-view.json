@@ -1,7 +1,19 @@
 [
-    {"id": 1, "name": "France - Paris", "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=48.876013,2.288873&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&","gpsCoord": "48.876013,2.288873"},
-    {"id": 2, "name": "Portugal - Ponte de Lima", "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=41.767707,-8.5850801&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&","gpsCoord": "41.767707,-8.5850801"},
-    {"id": 3, "name": "Colombie - Cartagena", "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=10.4241844,-75.551079&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&","gpsCoord":"10.4241844,-75.551079"},
-    {"id": 4, "name": "Bolivie - Salar de Uyuni", "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=-20.2039391,-67.2475538&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&","gpsCoord": "-20.2039391,-67.2475538"}
+    {"id": 1,
+      "name": "France - Paris",
+      "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=48.876013,2.288873&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&"
+      ,"gpsCoord": "48.876013,2.288873"},
+    {"id": 2,
+      "name": "Portugal - Ponte de Lima",
+      "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=41.767707,-8.5850801&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&",
+      "gpsCoord": "41.767707,-8.5850801"},
+    {"id": 3,
+      "name": "Colombie - Cartagena",
+      "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=10.4241844,-75.551079&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&",
+      "gpsCoord":"10.4241844,-75.551079"},
+    {"id": 4,
+      "name": "Bolivie - Salar de Uyuni",
+      "url": "https://maps.googleapis.com/maps/api/streetview?size=400x400&location=-20.2039391,-67.2475538&fov=80&heading=70&pitch=0&key=AIzaSyAWyirFDr8rNbK5BOVhHad51Hm3WnKrDmw&",
+      "gpsCoord": "-20.2039391,-67.2475538"}
 ]
 
