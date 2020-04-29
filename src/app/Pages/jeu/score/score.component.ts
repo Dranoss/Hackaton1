@@ -53,3 +53,4 @@ export class ScoreComponent implements OnInit {
       console.log(this.totalTime);
   }
 }
+
