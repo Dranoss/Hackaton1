@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MapInfoWindow, MapMarker, GoogleMap } from '@angular/google-maps';
-import { DistanceService } from '../distance.service';
+import { DistanceService } from 'src/app/Service/distance.service';
 
 @Component({
   selector: 'app-maps',
@@ -45,6 +45,7 @@ export class MapsComponent implements OnInit {
       options: {},
     }];
   }
+
 ngOnInit(): void {
   }
 
