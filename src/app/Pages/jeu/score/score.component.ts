@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { timer } from 'rxjs';
+import { ChronoService } from 'src/app/Service/chrono.service';
 
 @Component({
   selector: 'app-score',
@@ -19,7 +20,7 @@ export class ScoreComponent implements OnInit {
   interval;
   scoreTotal = 10000;
 
-  constructor() { }
+  constructor(public chronoService: ChronoService) { }
 
   ngOnInit(): void {
     this.interval = setInterval(() => {
@@ -50,6 +51,6 @@ export class ScoreComponent implements OnInit {
   stop() {
       clearInterval(this.interval);
       this.totalTime.push(this.hours, this.hours2, this.min, this.min2, this.sec, this.sec2);
-      console.log(this.totalTime);
+      this.chronoService.setChrono(this.totalTime);
   }
 }
