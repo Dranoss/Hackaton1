@@ -2,13 +2,25 @@
 <div class="container">
   <div class="score" *ngIf="!showLadder">
     <h2>Ton Score : {{scoreTotal}}</h2>
-    <p>Temps effectué: {{chronoTime[0]}}{{chronoTime[1]}}:{{chronoTime[2]}}{{chronoTime[3]}}:{{chronoTime[4]}}{{chronoTime[5]}} </p>
+    <h2>Temps effectué: {{chronoTime[0]}}{{chronoTime[1]}}:{{chronoTime[2]}}{{chronoTime[3]}}:{{chronoTime[4]}}{{chronoTime[5]}} </h2>
   </div>
-  <div class="input-name">
+  <div class="input-name" *ngIf="!showLadder">
     <input type="text" [(ngModel)]="name" placeholder="Écris ton nom ici !">
     <button (click)="valid()">Inscris ton nom dans la légende !</button>
   </div>
-  <div *ngIf="showLadder">
-    <button class="button-start button-last" (click)="gameRestart()">Start a new Game!</button>
+  <div class="scoreboard" *ngIf="showLadder">
+    <h2>Tableau des scores</h2>
+    <h3>(10 dernières parties)</h3>
+    <div class="score-total table" *ngFor="let a of scorelist, let i = index">
+      <div class="name">
+        {{i+1}} -
+        {{a.name}}
+      </div>
+      <div class="score-classement table">
+        {{a.score}} points
+      </div>
+    </div>
+    <button class="button-start button-last" (click)="gameRestart()">Commencez une nouvelle partie!</button>
   </div>
 </div>
+
