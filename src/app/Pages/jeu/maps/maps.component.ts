@@ -11,6 +11,7 @@ import { StreetViewService } from 'src/app/Service/street-view.service';
 export class MapsComponent implements OnInit {
  streetViewList: [];
   markers = [];
+  markerSolution = [];
   name: string;
   lat: number;
   lng: number;
