@@ -1,4 +1,3 @@
-
 .header {
   display: flex;
   justify-content: center;
@@ -21,12 +20,11 @@
 .game-page {
   background-image: url("/assets/fond-jeu.jpg");
   background-size: cover;
-  height: 90vh;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 1px;
 }
 
@@ -34,14 +32,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  width: 50%;
 }
 
 .topblock img {
   border: solid 2px #c7a091;
-  border-radius: 10px;
-  width: 1100px;
-  height: 700px;
+}
+
+.topblock img {
+  width: 100%;
+  height: 570px;
 }
 
 .score {
@@ -53,18 +53,17 @@
   background-color: white;
   margin: 2px;
   border: solid 2px #c7a091;
-  border-radius: 10px;
 }
 
 google-map {
   border-right: solid 2px #c7a091;
-  border-radius: 10px;
 }
 
 .score-timer {
   width: 100%;
   height: 100%;
   margin-top: 30px;
+  padding: 2px;
 }
 
 .message{
@@ -85,15 +84,9 @@ button {
   font-size: 22px;
   color: white;
   border-radius: 16px;
-
-    &:hover {
-    color: #fff;
-    background-color: #528cb4;
-    cursor: pointer;
-}
 }
 
 .footer {
   background-color: #c7a091;
-  height: 75px;
+  height: 17px;
 }
