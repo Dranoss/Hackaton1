@@ -17,7 +17,7 @@
         </map-marker>
       </google-map>
       <div class="score-timer">
-          <app-score></app-score>
+          <app-score [scoreTotal]="points" [sendTime]="SendTime"></app-score>
         <div class="message" *ngIf="canClick === false">
           <p>Vous étiez à {{distance}} Km <br> de {{name}}</p>
           <button (click)="confirm()" *ngIf="streetViewList.length>0 && markers.length > 0">Prochaine Image</button>
