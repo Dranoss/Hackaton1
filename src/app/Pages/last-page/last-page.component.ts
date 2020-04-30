@@ -17,6 +17,5 @@ export class LastPageComponent implements OnInit {
   ngOnInit(): void {
     this.scoreTotal = this.pointsService.getScore();
     this.chronoTime = this.chronoService.getChrono();
-    console.log(this.chronoTime);
   }
 }
