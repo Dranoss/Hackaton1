@@ -1,7 +1,7 @@
 .container{
   background-image: url("src/assets/3341228.jpg");
   background-size: cover;
-  height: 90vh;
+  height: 806px;
 }
 
 div{
@@ -17,28 +17,29 @@ div{
   line-height: 50px;
   color:white;
   align-self: flex-start;
-  width: 50%;
-  height: 40%;
-  margin-top: 50px;
+  width: 45%;
+  height: 20%;
 }
 
 .bloc2{
   align-self: flex-end;
-  margin-top: 50px;
   margin-right: 20%;
-  margin-bottom: 4%;
+  margin-bottom: 230px;
   background: #528cb4;
-  border-radius: 4px;
-  height: 280px;
+  height: 400px;
   width: 260px;
   font-size: 22px;
   text-align: center;
   color: #fff;
   padding: 8px;
+  border-radius: 10px;
+  line-height: 25px;
 }
+
 .underline{
   text-decoration: underline;
   margin:4px;
+  font-size: 28px;
 }
 .card {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -47,7 +48,10 @@ div{
   align-self: flex-start;
   display: flex;
   justify-content: flex-start;
-  margin-top: 90px;
   width: 90%;
   height: 233px;
+}
+
+.button-start {
+  margin-bottom: 50px;
 }
