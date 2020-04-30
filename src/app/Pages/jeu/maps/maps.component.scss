@@ -86,6 +86,12 @@ button {
   border-radius: 16px;
 }
 
+button:hover {
+  color: #fff;
+  background-color: #528cb4;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #c7a091;
   height: 17px;

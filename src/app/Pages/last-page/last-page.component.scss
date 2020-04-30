@@ -14,4 +14,47 @@
   font-size: 2vh;
   padding-left: 45%;
   padding-top: 5%;
+  margin-bottom: 200px;
+}
+
+.input-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-name input{
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #c7a091;
+}
+
+input:hover {
+
+}
+
+input ::placeholder {
+  color: white;
+}
+
+.input-name button{
+  height: 40px;
+  font-size: 25px;
+  padding: 10px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  border: none;
+  background-color: #c7a091;
+  color: white;
+  margin-top: 20px;
+  border-radius: 16px;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #528cb4;
+  cursor: pointer;
 }
