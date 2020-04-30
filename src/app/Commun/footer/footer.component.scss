@@ -1,11 +1,29 @@
 .footer-container{
   display: flex;
-  justify-content: space-between;
-  height: 12%;
+  justify-content: space-around;
+  background-color: #528cb4;
+  align-items: center;
+  height:90px;
+  color:white;
+  font-size: 22px;
 }
-.names-container{
+div{
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
+.bloc1{
+  padding-right: 50px;
+}
+.bloc2{
+  padding-right: 200px;
+}
+.bloc3{
+  padding-right: 150px;
+}
+
+img{
+  height: 60px;
+  margin-top: 10px;
+}
 
