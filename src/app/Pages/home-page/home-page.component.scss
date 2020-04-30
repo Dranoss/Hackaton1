@@ -27,17 +27,20 @@ div{
   margin-right: 20%;
   margin-bottom: 4%;
   background: #528cb4;
-  border-radius: 4px;
-  height: 280px;
+  height: 300px;
   width: 260px;
   font-size: 22px;
   text-align: center;
   color: #fff;
   padding: 8px;
+  border-radius: 10px;
+  line-height: 25px;
 }
+
 .underline{
   text-decoration: underline;
   margin:4px;
+  font-size: 28px;
 }
 .card {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
