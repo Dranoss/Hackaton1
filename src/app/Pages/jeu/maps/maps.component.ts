@@ -57,7 +57,6 @@ export class MapsComponent implements OnInit {
       this.canClick = false;
       this.setScore();
       this.SendTime = true;
-      this.scoreService.post({score : this.points}).subscribe((e) => this.resultServer = e  );
   }
   }
   addMarker() {

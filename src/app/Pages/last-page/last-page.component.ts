@@ -14,6 +14,8 @@ export class LastPageComponent implements OnInit {
   scoreTotal: number;
   chronoTime: number[];
   scorelist;
+  name: string;
+  showLadder = false;
 
   constructor(public pointsService: PointsService, public chronoService: ChronoService, public route: Router,
               private scoreService: ScoreService) { }
@@ -21,9 +23,13 @@ export class LastPageComponent implements OnInit {
   ngOnInit(): void {
     this.scoreTotal = this.pointsService.getScore();
     this.chronoTime = this.chronoService.getChrono();
-    this.scoreService.get().subscribe((e) => this.scorelist = e );
   }
-
+ valid(){
+   this.scoreService.post({score: this.scoreTotal, name: this.name}).subscribe((e) => {
+     this.scoreService.get().subscribe((list) => this.scorelist = list);
+     this.showLadder = true;
+   });
+ }
   gameRestart(){
     this.route.navigateByUrl('');
   }

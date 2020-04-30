@@ -11,6 +11,7 @@ import { ScoreComponent } from './Pages/jeu/score/score.component';
 import { MapsComponent } from './Pages/jeu/maps/maps.component';
 import { HttpClientModule} from '@angular/common/http';
 import { LastPageComponent } from './Pages/last-page/last-page.component';
+import { FormsModule} from '@angular/forms';
 
 
 
@@ -30,7 +31,8 @@ import { LastPageComponent } from './Pages/last-page/last-page.component';
     BrowserModule,
     AppRoutingModule,
     GoogleMapsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
