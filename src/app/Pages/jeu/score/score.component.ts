@@ -18,7 +18,7 @@ export class ScoreComponent implements OnInit {
   gameFinished = false;
   totalTime: number[] = [];
   interval;
-  scoreTotal = 10000;
+  scoreTotal = 1000;
 
   constructor(public chronoService: ChronoService) { }
 
