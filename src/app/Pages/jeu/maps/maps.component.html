@@ -1,10 +1,13 @@
 <div class="header">
+  <p>Travel</p>
+  <img src="assets/logo-hackathon.png">
+  <p>Couch</p>
 </div>
 <div class="game-page">
   <div class="topblock">
     <img *ngIf="streetViewSelected" [src]="streetViewSelected.url" alt="Landscape" >
     <div class="score">
-      <google-map height="254px" width="700px" [zoom]="4" (mapClick)="click($event)">
+      <google-map height="250px" width="700px" [zoom]="4" (mapClick)="click($event)">
         <map-marker
           *ngFor="let marker of markers"
           [position]="marker.position"
@@ -16,7 +19,7 @@
       <div class="score-timer">
           <app-score></app-score>
         <div class="message" *ngIf="canClick === false">
-         <p>Vous etiez à {{distance}} Km <br> de {{name}}</p>
+          <p>Vous étiez à {{distance}} Km <br> de {{name}}</p>
           <button (click)="confirm()" *ngIf="streetViewList.length>0 && markers.length > 0">Prochaine Image</button>
           <button *ngIf="streetViewList.length === 0 && markers.length>0">Voir résultats</button>
         </div>
