@@ -1,0 +1,30 @@
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  width: 50%;
+  height: 100%;
+  margin-top: 15px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  width: 50%;
+  height: 100%;
+}
+
+.score p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

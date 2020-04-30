@@ -6,7 +6,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './Commun/navbar/navbar.component';
 import { FooterComponent } from './Commun/footer/footer.component';
 import { HomePageComponent } from './Pages/home-page/home-page.component';
-import { MapsComponent } from './Pages/maps/maps.component';
+import { JeuComponent } from './Pages/jeu/jeu.component';
+import { ScoreComponent } from './Pages/jeu/score/score.component';
+import { MapsComponent } from './Pages/jeu/maps/maps.component';
+import { HttpClientModule} from '@angular/common/http';
+import { LastPageComponent } from './Pages/last-page/last-page.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -14,12 +21,16 @@ import { MapsComponent } from './Pages/maps/maps.component';
     MapsComponent,
     HomePageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ScoreComponent,
+    JeuComponent,
+    LastPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

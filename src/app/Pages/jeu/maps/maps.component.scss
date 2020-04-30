@@ -1,0 +1,49 @@
+.header {
+  background-color: darkorange;
+  height: 75px;
+  margin-bottom: 1px;
+}
+
+.game-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 1px;
+}
+
+.topblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.topblock img {
+  width: 100%;
+  height: 570px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.score-timer {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: darkblue;
+  height: 75px;
+}

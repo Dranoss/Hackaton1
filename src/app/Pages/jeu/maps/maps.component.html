@@ -1,0 +1,28 @@
+<div class="header">
+</div>
+<div class="game-page">
+  <div class="topblock">
+    <img *ngIf="streetViewSelected" [src]="streetViewSelected.url" alt="Landscape" >
+    <div class="score">
+      <google-map height="254px" width="700px" [zoom]="4" (mapClick)="click($event)">
+        <map-marker
+          *ngFor="let marker of markers"
+          [position]="marker.position"
+          [label]="marker.label"
+          [title]="marker.title"
+          [options]="marker.options">
+        </map-marker>
+      </google-map>
+      <div class="score-timer">
+          <app-score></app-score>
+        <div class="message" *ngIf="canClick === false">
+         <p>Vous etiez à {{distance}} Km <br> de {{name}}</p>
+          <button (click)="confirm()" *ngIf="streetViewList.length>0 && markers.length > 0">Prochaine Image</button>
+          <button *ngIf="streetViewList.length === 0 && markers.length>0">Voir résultats</button>
+        </div>
+     </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+</div>
