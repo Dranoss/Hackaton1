@@ -59,10 +59,6 @@ ngOnChanges(){
       clearInterval(this.interval);
       this.totalTime.push(this.hours, this.hours2, this.min, this.min2, this.sec, this.sec2);
       this.chronoService.setChrono(this.totalTime);
-      console.log(this.totalTime);
-
-      console.log(this.chronoService.chrono);
-
   }
 }
 

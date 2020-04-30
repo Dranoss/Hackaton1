@@ -4,6 +4,7 @@ import { DistanceService } from 'src/app/Service/distance.service';
 import { StreetViewService } from 'src/app/Service/street-view.service';
 import { PointsService } from 'src/app/Service/points.service';
 import { Router } from '@angular/router';
+import { ScoreService } from 'src/app/Service/score.service';
 
 @Component({
   selector: 'app-maps',
@@ -23,8 +24,9 @@ export class MapsComponent implements OnInit {
   canClick = true;
   points = 0;
   SendTime = false;
+  resultServer;
   constructor(private calculDistance: DistanceService, private streetView: StreetViewService, private score: PointsService,
-              private router: Router) {
+              private router: Router, private scoreService: ScoreService) {
     this.counter = 0;
   }
   click(event: google.maps.MouseEvent) {
@@ -55,6 +57,7 @@ export class MapsComponent implements OnInit {
       this.canClick = false;
       this.setScore();
       this.SendTime = true;
+      this.scoreService.post({score : this.points}).subscribe((e) => this.resultServer = e  );
   }
   }
   addMarker() {
