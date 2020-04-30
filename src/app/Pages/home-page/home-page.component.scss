@@ -1,7 +1,6 @@
 .container{
   background-image: url("src/assets/3341228.jpg");
   background-size: cover;
-  height: 1000px;
 }
 
 div{
@@ -19,11 +18,13 @@ div{
   align-self: flex-start;
   width: 50%;
   height: 40%;
+  margin-top: 50px;
 }
 
 .bloc2{
   align-self: flex-end;
-  margin-right: 22%;
+  margin-top: 50px;
+  margin-right: 20%;
   margin-bottom: 4%;
   background: #528cb4;
   border-radius: 4px;
@@ -43,9 +44,13 @@ div{
 }
 .bloc3{
   align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 90px;
   width: 90%;
-  height: 67%;
+  height: 233px;
 }
+
 button {
   padding: 1rem 2rem;
   font-size: 1.8rem;
