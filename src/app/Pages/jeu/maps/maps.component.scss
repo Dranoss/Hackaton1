@@ -84,6 +84,12 @@ button {
   font-size: 22px;
   color: white;
   border-radius: 16px;
+
+    &:hover {
+    color: #fff;
+    background-color: #528cb4;
+    cursor: pointer;
+}
 }
 
 .footer {
