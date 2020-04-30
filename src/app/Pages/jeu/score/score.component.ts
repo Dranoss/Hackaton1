@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { timer } from 'rxjs';
 import { ChronoService } from 'src/app/Service/chrono.service';
+import { PointsService } from 'src/app/Service/points.service';
 
 @Component({
   selector: 'app-score',
   templateUrl: './score.component.html',
   styleUrls: ['./score.component.scss']
 })
-export class ScoreComponent implements OnInit {
-
+export class ScoreComponent implements OnInit, OnChanges {
+@Input() scoreTotal: number;
+@Input() sendTime: boolean;
   sec = 0;
   sec2 = 0;
   min = 0;
@@ -18,9 +20,10 @@ export class ScoreComponent implements OnInit {
   gameFinished = false;
   totalTime: number[] = [];
   interval;
-  scoreTotal = 10000;
 
-  constructor(public chronoService: ChronoService) { }
+  constructor(public chronoService: ChronoService) {
+
+   }
 
   ngOnInit(): void {
     this.interval = setInterval(() => {
@@ -47,11 +50,19 @@ export class ScoreComponent implements OnInit {
       }
   }, 1000);
   }
-
+ngOnChanges(){
+  if (this.sendTime === true){
+    this.stop();
+  }
+}
   stop() {
       clearInterval(this.interval);
       this.totalTime.push(this.hours, this.hours2, this.min, this.min2, this.sec, this.sec2);
       this.chronoService.setChrono(this.totalTime);
+      console.log(this.totalTime);
+
+      console.log(this.chronoService.chrono);
+
   }
 }
 

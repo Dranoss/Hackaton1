@@ -5,12 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class PointsService {
 
-  public score = 50;
+  public score = 0;
 
   constructor() { }
 
   setScore(value: number){
-    this.score = value;
+    this.score += value;
   }
 
   getScore(){
